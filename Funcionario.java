@@ -1,17 +1,19 @@
+import java.util.Date;
+
 public class Funcionario {
   String nome;
   Double salario;
-  int codFuncionario;
+  Date dataContratacao;
 
-  public Funcionario(String vNome, Double vSalario, int vCodFuncionario) {
-    this.nome = vNome;
-    this.salario = vSalario;
-    this.codFuncionario = vCodFuncionario;
+  public Funcionario(String nome, Double Salario, Date DataContratacao) {
+    this.nome = nome;
+    this.salario = Salario;
+    this.dataContratacao = DataContratacao;
   }
-
-  public void exibirDados(){
-    System.out.println("Nome do Bodegueiro "+this.nome);
-    System.out.println("Saldo Atual do bodegueiro "+this.salario);
-    System.out.println("Numero do registro "+this.codFuncionario);
+  
+  public String getNome(){
+	  return this.nome;
+	  
   }
+  
 }
