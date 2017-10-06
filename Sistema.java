@@ -69,11 +69,25 @@ public class Sistema{
           break;
 		  }
 		  case (4):{
-			
+		  		String NomeBebida;
+		  		int Quantidade;
+
+						System.out.println("Digite o nome da bebida para compra: ");
+						NomeBebida = teclado.next();
+						System.out.println("Digite a quantidade Comprada: ");
+						Quantidade = teclado.nextInt();
+						empresa.comprar(NomeBebida,Quantidade);
 		  break;
 		  }
 		  case (5):{
-						cerveja.rmvEstoque(6);
+		  		String NomeBebida2;
+		  		int Quantidade2;
+
+						System.out.println("Digite o nome da bebida para venda: ");
+						NomeBebida2 = teclado.next();
+						System.out.println("Digite a quantidade para venda: ");
+						Quantidade2 = teclado.nextInt();
+						empresa.vender(NomeBebida2,Quantidade2);
 		  break;
 		  }
 		  case (6):{

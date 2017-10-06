@@ -17,7 +17,7 @@ public class Bebida {
 	 public Bebida(){
 		this.teor = 0.0;
 		}
-		
+
 	 //seter void n retorna 
 	 public void setNomeBebida(String n){
 	 	this.nomeBebida = n;
@@ -71,9 +71,12 @@ public class Bebida {
   }
   
   public void rmvEstoque(int q){
-	  if(q >= this.quantEstoque)
-		this.quantEstoque-=q;
-      else 
-		System.out.println("Estoque insuficiente");		
+	  if( q <= this.quantEstoque ){
+	  	this.quantEstoque-=q;	
+	  }else{
+	  	System.out.println("Não disponivel");  
+	  }
+	  
+   
   }
 }
