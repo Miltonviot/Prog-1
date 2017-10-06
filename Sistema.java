@@ -87,9 +87,9 @@ public class Sistema{
 		  	System.out.print("Crédito aprovado?, digite 1 para sim ");
        		fiado = teclado.nextInt();
        		if (fiado == 1) {
-        		setFiado(true);
+        		novo.setFiado(true);
        		} 	else {
-        		setFiado(false);
+        		novo.setFiado(false);
        		 	}
 
 		  	empresa.cadastraCliente(novo);
@@ -110,6 +110,23 @@ public class Sistema{
 
 		  	
 				
+		  break;
+		  }
+
+		  case (8):{
+					Bebida novo = new Bebida();
+		  	
+		  	System.out.println("Digite o nome da Bebida: ");
+		  	novo.setNomeBebida(teclado.nextLine());
+		  	System.out.println("Digite o Teor alcoolico da bebida: ");
+		  	novo.setTeor(teclado.nextDouble());
+		  	System.out.println("Digite quantas MLs tem a bebida:");
+		  	novo.setMl(teclado.nextDouble());
+		  	System.out.println("Digite o valor de venda da bebida:");
+		  	novo.setValorVenda(teclado.nextDouble());
+
+		  	empresa.cadastrarBebida(novo);
+
 		  break;
 		  }
 		  case (0):{

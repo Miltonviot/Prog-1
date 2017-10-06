@@ -12,6 +12,12 @@ public class Funcionario {
   this.cpf = c;
   this.dataContratacao = d;
   }
+  public Funcionario(){
+  
+  this.salario = 0.0;
+  
+  
+  }
   //seter
   public void setContrato(int dd, int mm, int aaaa){
     this.dataContratacao = new Date(aaaa, mm, dd);

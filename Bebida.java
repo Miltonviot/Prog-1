@@ -6,7 +6,7 @@ public class Bebida {
 	private int quantEstoque;
 
 	//construtor
-	  public Bebida(String nomeBebida,double teor,double ml, double valorVenda, int quantEstoque){
+	 public Bebida(String nomeBebida,double teor,double ml, double valorVenda, int quantEstoque){
 		this.nomeBebida = nomeBebida;
 		this.teor = teor;
 		this.ml = ml;
@@ -14,6 +14,10 @@ public class Bebida {
 		this.quantEstoque = quantEstoque;
 		
 	 }
+	 public Bebida(){
+		this.teor = 0.0;
+		}
+		
 	 //seter void n retorna 
 	 public void setNomeBebida(String n){
 	 	this.nomeBebida = n;

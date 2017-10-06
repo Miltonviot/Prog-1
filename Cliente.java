@@ -11,6 +11,9 @@ public class Cliente {
     this.fiado = fiado;
     
   }
+   public Cliente() {
+    this.cpf = 0;
+  }
   
   public void setNomeCliente(String n){
   	this.nomeCliente = n;
