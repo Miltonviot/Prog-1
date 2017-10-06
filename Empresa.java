@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Empresa{
 
@@ -10,6 +11,7 @@ public class Empresa{
 	HashMap <String,Bebida> estoque = new HashMap();
 	ArrayList <Cliente> clientes = new ArrayList();
 
+	
 	public Empresa(String nome,int cnpj){
 		this.nome = nome;
 		this.cnpj = cnpj;
